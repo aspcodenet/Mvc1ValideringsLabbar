@@ -1,0 +1,17 @@
+﻿@model  Mvc1ValideringsLabbar.ViewModels.DatumIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" asp-controller="Datum" asp-action="Index">
+    <input asp-for="Year" /> <br /><span asp-validation-for="Year"></span><br />
+    <input asp-for="Month" /> <br /><span asp-validation-for="Month"></span><br />
+    <input asp-for="Day" /> <br /><span asp-validation-for="Day"></span><br />
+
+
+    <hr />
+    <input asp-for="Datum" /> <br /><span asp-validation-for="Datum"></span><br />
+    <hr />
+
+    <button type="submit">Spara</button>
+</form>
